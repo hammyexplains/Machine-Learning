@@ -6,9 +6,9 @@ Data is a collection of raw facts, values, or information.
 
 ### Examples:
 
-* Name: Abdul Hameed
-* Age: 21
-* Salary: 550000
+* Name: Mahesh BOB
+* Age: 45
+* Salary: 5500000
 * City: Hyderabad
 
 Each piece of information is called **data**.
