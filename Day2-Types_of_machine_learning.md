@@ -1,74 +1,66 @@
-Types of Machine Learning
+#Supervised vs Unsupervised Learning
 
-Machine Learning (ML) is a way of teaching computers to learn patterns from data and make decisions without being explicitly programmed for every task.
+##Supervised Learning
 
-1. Supervised Learning
+In Supervised Learning, we provide the model with:
 
-In supervised learning, the model learns from labeled data (data with correct answers).
+- Inputs (Features)
+- Outputs (Labels/Targets)
 
-Example
-
-Imagine a teacher checking answer sheets.
-
-- Input: Student answers
-- Output: Marks
-
-The model learns from past examples and predicts the correct output for new data.
-
-Real-world examples:
-
-- Predicting house prices
-- Email spam detection
-- Customer churn prediction
-
----
-
-2. Unsupervised Learning
-
-In unsupervised learning, the model works with unlabeled data and tries to find hidden patterns or groups.
+The model learns the relationship between the inputs and outputs and uses that knowledge to make predictions on new data.
 
 Example
 
-Imagine sorting a basket of mixed fruits without knowing their names. You group them based on similarities such as color, size, or shape.
+Age| Salary| Bought Product?
+25| 30,000| Yes
+35| 60,000| No
+28| 40,000| Yes
 
-Real-world examples:
+Here:
 
-- Customer segmentation
-- Grouping similar products
-- Finding unusual patterns in data
+- Inputs: Age, Salary
+- Output (Label): Bought Product?
+
+Simple Rule:
+
+«Input + Output = Supervised Learning»
 
 ---
 
-3. Reinforcement Learning
+##Unsupervised Learning
 
-In reinforcement learning, an agent learns by trial and error. It receives rewards for good actions and penalties for bad actions.
+In Unsupervised Learning, we provide the model with:
+
+- Inputs (Features) only
+- No Outputs (Labels)
+
+The model tries to find hidden patterns, similarities, or groups within the data.
 
 Example
 
-Teaching a dog tricks:
+Age| Salary
+25| 30,000
+35| 60,000
+26| 32,000
+55| 90,000
 
-- Correct action → Treat (reward)
-- Wrong action → No treat (penalty)
+The model may automatically group similar customers together based on their age and salary.
 
-Over time, the dog learns the best behavior.
+Simple Rule:
 
-Real-world examples:
-
-- Self-driving cars
-- Game-playing AI (Chess, PUBG bots)
-- Robot navigation
+«Only Inputs = Unsupervised Learning»
 
 ---
 
-Quick Summary
+Quick Comparison
 
-Type| Data| Goal| Example
-Supervised Learning| Labeled| Predict answers| Spam Detection
-Unsupervised Learning| Unlabeled| Find patterns/groups| Customer Segmentation
-Reinforcement Learning| Rewards & Penalties| Learn best actions| Self-Driving Cars
+Feature| Supervised Learning| Unsupervised Learning
+Inputs Available| ✅ Yes| ✅ Yes
+Outputs Available| ✅ Yes| ❌ No
+Goal| Predict Outputs| Find Patterns
+Example| Spam Detection| Customer Segmentation
 
 Easy Way to Remember
 
-- Supervised Learning → Learning with a teacher.
-- Unsupervised Learning → Learning without a teacher.
-- Reinforcement Learning → Learning through rewards and mistakes.
+- Supervised Learning → Learning with a teacher (answers are provided).
+- Unsupervised Learning → Learning without a teacher (find patterns yourself)..
