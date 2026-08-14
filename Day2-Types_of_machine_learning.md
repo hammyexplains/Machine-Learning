@@ -1,66 +1,103 @@
-#Supervised vs Unsupervised Learning
+# Types of Machine Learning
 
-##Supervised Learning
+Machine Learning can be broadly divided into three main types:
 
-In Supervised Learning, we provide the model with:
+## 1. Supervised Learning
 
-- Inputs (Features)
-- Outputs (Labels/Targets)
+In Supervised Learning, the model is trained using both **inputs (features)** and **outputs (labels)**.
 
-The model learns the relationship between the inputs and outputs and uses that knowledge to make predictions on new data.
+The goal is to learn the relationship between inputs and outputs so that the model can predict outputs for new data.
 
-Example
+### Example
 
-Age| Salary| Bought Product?
-25| 30,000| Yes
-35| 60,000| No
-28| 40,000| Yes
-
-Here:
+| Age | Salary | Bought Product? |
+|------|--------|----------------|
+| 25 | 30,000 | Yes |
+| 35 | 60,000 | No |
+| 28 | 40,000 | Yes |
 
 - Inputs: Age, Salary
-- Output (Label): Bought Product?
+- Output: Bought Product?
 
-Simple Rule:
+**Simple Rule:**
 
-«Input + Output = Supervised Learning»
+> Input + Output = Supervised Learning
 
----
-
-##Unsupervised Learning
-
-In Unsupervised Learning, we provide the model with:
-
-- Inputs (Features) only
-- No Outputs (Labels)
-
-The model tries to find hidden patterns, similarities, or groups within the data.
-
-Example
-
-Age| Salary
-25| 30,000
-35| 60,000
-26| 32,000
-55| 90,000
-
-The model may automatically group similar customers together based on their age and salary.
-
-Simple Rule:
-
-«Only Inputs = Unsupervised Learning»
+**Real-world Examples:**
+- Email Spam Detection
+- House Price Prediction
+- Customer Churn Prediction
 
 ---
 
-Quick Comparison
+## 2. Unsupervised Learning
 
-Feature| Supervised Learning| Unsupervised Learning
-Inputs Available| ✅ Yes| ✅ Yes
-Outputs Available| ✅ Yes| ❌ No
-Goal| Predict Outputs| Find Patterns
-Example| Spam Detection| Customer Segmentation
+In Unsupervised Learning, the model is trained using only **inputs (features)**. No output labels are provided.
 
-Easy Way to Remember
+The model tries to discover hidden patterns, relationships, or groups in the data.
 
-- Supervised Learning → Learning with a teacher (answers are provided).
-- Unsupervised Learning → Learning without a teacher (find patterns yourself)..
+### Example
+
+| Age | Salary |
+|------|--------|
+| 25 | 30,000 |
+| 35 | 60,000 |
+| 26 | 32,000 |
+| 55 | 90,000 |
+
+The model may group customers with similar characteristics into different segments.
+
+**Simple Rule:**
+
+> Only Inputs = Unsupervised Learning
+
+**Real-world Examples:**
+- Customer Segmentation
+- Market Basket Analysis
+- Anomaly Detection
+
+---
+
+## 3. Reinforcement Learning
+
+In Reinforcement Learning, an agent learns by interacting with an environment.
+
+The agent performs actions and receives:
+- Rewards for good actions
+- Penalties for bad actions
+
+The goal is to maximize the total reward over time.
+
+### Example
+
+Think of teaching a dog a trick:
+
+- Correct action → Treat (Reward)
+- Wrong action → No Treat (Penalty)
+
+Over time, the dog learns the best behavior.
+
+**Simple Rule:**
+
+> Actions + Rewards/Penalties = Reinforcement Learning
+
+**Real-world Examples:**
+- Self-Driving Cars
+- Game Playing AI (Chess, Go)
+- Robot Navigation
+
+---
+
+## Quick Comparison
+
+| Type | Input Data | Output Labels | Learning Method |
+|--------|-----------|---------------|----------------|
+| Supervised Learning | Yes | Yes | Learn from labeled examples |
+| Unsupervised Learning | Yes | No | Find hidden patterns |
+| Reinforcement Learning | Environment State | Rewards/Penalties | Learn through trial and error |
+
+## Easy Way to Remember
+
+- **Supervised Learning** → Learning with a teacher.
+- **Unsupervised Learning** → Learning without a teacher.
+- **Reinforcement Learning** → Learning through rewards and mistakes.
